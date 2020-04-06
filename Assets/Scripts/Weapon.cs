@@ -24,6 +24,8 @@ public class Weapon : MonoBehaviour
         {
             Debug.Log("I did hit " + Hit.transform.name);
             EnemyHealth target = Hit.transform.GetComponent<EnemyHealth>();
+            if (target == null)
+                return;
             target.TakeDamage(Damage);
         }
         else
