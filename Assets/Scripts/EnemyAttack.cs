@@ -21,6 +21,6 @@ public class EnemyAttack : MonoBehaviour
     {
         if (target == null) return;
         target.GetComponent<PlayerHealth>().TakeDamage(damage);
-        Debug.Log("Bam Bam");
+        Debug.Log("Gangster Attacked me");
     }
 }

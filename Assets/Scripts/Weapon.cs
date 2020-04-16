@@ -15,14 +15,16 @@ public class Weapon : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
+            PlayMuzzleFlash();
             Shoot();
         }
     }
 
     private void Shoot()
     {
-        PlayMuzzleFlash();
+        
         ProcessRaycast();
+        
 
     }
 
